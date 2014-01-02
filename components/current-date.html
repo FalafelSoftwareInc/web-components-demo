@@ -1,0 +1,19 @@
+<polymer-element name="current-date">
+  <style>
+    #date {
+      color: red;
+    }
+  </style>
+
+  <template>
+    <span id="date"></span>
+  </template>
+
+  <script>  
+    Polymer('current-date', {
+      ready: function() {
+        this.$.date.innerText = 'Web Component: ' + new Date();
+      }
+    });
+  </script>
+</polymer-element>
